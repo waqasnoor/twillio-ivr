@@ -51,7 +51,7 @@ app.post('/ivr/menu', (req, res) => {
   voiceResponse.say(
     'Your Testing Code is 1214. Thank you for calling this service. Bye '
   );
-  twiml.hangup();
+  voiceResponse.hangup();
 
 
   res.send(voiceResponse.toString());
